@@ -1,0 +1,298 @@
+
+/*HEADER**********************************************************************************/
+header{
+	background-color: #1B263B;
+	padding:1rem;
+	
+
+}
+header img{
+	background-color: #F5F5F5;
+    width:200px;
+    border-radius: 12px;
+    border:2px solid #3FA34D;
+	
+	}
+
+/*NAVIGATION*********************************************************************************/
+nav a{
+		color: #FFFFFF;
+		font-weight: 600;
+		font-size: 1.05rem;
+		padding: 0.3rem 0.5rem;
+		border-radius: 4px;
+		text-decoration: none;
+}
+
+nav a:hover{
+	background-color: #4FD3C4;
+	color: #1B263B;
+	
+	}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav li { 
+ display: inline-block;
+margin: 0 1.2rem
+  }
+  
+/*Body & MAIN**********************************************************************************/
+body{
+	font-family: Arial, sans-serif;
+	color:#FFFFFF;
+	margin: 0;
+	padding:0;
+}
+
+main{
+
+	background-color: #EAF2FB;
+	max-width: 900px;
+	margin: 2rem auto;
+	padding: 1rem;
+	margin-top: 70px;
+
+}
+
+/*TITRES**********************************************************************************************/
+h1{
+	text-align: center;
+	color: #1E2A38;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-decoration: underline ;
+	}
+	
+h2{
+	color: #415A77;
+	margin-top: 1.5rem;
+	font-size: 1.6rem;
+	border-bottom: 2px solid #E0E5EB;
+	padding-bottom: 0.3rem;
+	text-decoration: underline ;
+	}
+
+h3{
+	margin-top: 1rem;
+	font-weight: 600;
+	font-size: 1.3rem;
+	text-decoration: underline ;
+}
+
+h3.bleu{
+	color: #6B8BA4;
+}
+
+
+/*SECTION**************************************************************************************/
+section {
+	 margin: 2rem 0;
+	 padding: 1.5rem;
+	 box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+	   }
+
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+
+#definition{
+	background-color: #DFF5DF;
+	border: 2px solid #1ABC9C;
+	}
+#utilite{
+	background-color: #F3FFF3;
+	border: 2px solid #3FA34D;
+
+}
+#fonctionnement{
+	
+	background-color: #FFF9CC;
+	border: 2px solid #FFD700;
+
+	}
+	
+	
+#types{
+	background-color: #F2E5E5;
+		border: 2px solid #2C3E50;
+	}
+
+#avantages{
+	background-color: #E8FBE8;
+		border: 2px solid #3FA34D;
+	}
+#inconvenients{
+		background-color: #FDECEC;
+		border: 2px solid #C62828;
+	
+	}
+	
+#notes{
+		
+		background-color: #FDECF7;
+		border: 2px solid #C2185B;
+}
+
+.lien{
+	background-color: #DDE3EB;
+	 border: 2px solid #3FA34D; 
+	 padding: 1rem;
+	  border-radius: 6px; 
+	  color: #1B263B; 
+	  font-weight: 600;
+	
+}
+
+#role{
+	background-color: #FFE8A3;
+	border: 2px solid #D4A017;
+	padding: 1.5rem;
+	border-radius: 8px;
+	color: #1B263B;
+	font-weight: 600;
+	margin: 2rem 0;
+}
+
+
+	
+
+/*TEXTE*/
+
+p{
+	color: #2F3E46;
+	font-family: arial;
+	font-size: 12pt;
+	text-align: justify;
+	line-height: 1.5;
+	
+	}
+	
+h1 + p, h2 + p, h3 + p, figure+p {
+	 text-indent: 2rem;
+	  }
+
+
+ol{
+		color: #2F3E46;
+		line-height: 1.5;
+		margin-left: 1.5rem;
+		padding-left: 0.5rem;
+}
+
+ul{
+	color: #2F3E46;
+	line-height: 1.5;
+	margin-left: 1.5rem;
+	padding-left: 0.5rem;
+}
+
+ul li,ol li{
+	margin-bottom: 0.5rem;
+}
+
+/*FIGURES********************************************************************************************/
+figure {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.images { 
+	width: 300px; 
+	display: inline-block; 
+	margin-right: 1rem; 
+	vertical-align: top;
+}
+
+figcaption{
+	font-size: 0.9rem;
+	color: #526D82;
+	margin-top: 0.5rem;
+	font-style: italic;
+}
+
+/*TABLEAU****************************************************************************************/
+table{
+	width:  100%;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+	font-size: 0.95rem;
+	background-color: #FFFFFF;
+}
+
+
+th,td{
+		border: 1px solid #415A77;
+		color: #1B263B;
+		font-weight: 600;
+		font-size: 1rem;
+		padding: 0.7rem;
+		text-align: left;
+		
+}
+
+th{
+	background-color: #1B263B;
+	color: #FFFFFF;
+
+	}
+	
+tr:nth-child(even) { 
+background-color: #EAF2FB; 
+}
+
+
+
+
+
+
+/*ASIDE***********************************************************************************/
+aside{
+	background-color: #B7D9EB;
+	color: black;
+	padding: 1rem;
+	border-left: 4px solid #1ABC9C;
+	border-radius: 8px;
+	
+}
+	
+
+
+footer{
+	background-color: #1B263B;
+	text-align: center;
+	padding: 1rem 0;
+	font-size: 0.9rem;
+	line-height: 1.4;
+	
+	}
+	
+footer img{
+    background-color: #F5F5F5;
+    width:200px;
+    border-radius: 12px;
+    border:2px solid #3FA34D;
+}
+
+
+footer .hautPage {
+		background-color: #1ABC9C;
+	   color: #FFFFFF; 
+	   font-weight: 600;
+	    border-radius: 12px;
+	    border:2px solid #3FA34D;
+	    }
+footer span { 
+display: block;
+ margin: 0.2rem 0; 
+ }
+
+
