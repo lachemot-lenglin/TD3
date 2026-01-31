@@ -1,133 +1,145 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="description" content="définition d'un GPU,fonctionnement, Limites,">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./images/icone.png">
-    <title>GPU</title>
-</head>
-<body>
-
-
-<header id="haut">
-    <a href = "https://mycy.cyu.fr/"><img src="./images/logoCergy.png" width="150" alt="logo université"></a>
-
-
-	<nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="gpu.html">GPU</a></li>
-            <li><a href="carte-mere.html">Carte-mère</a></li>
-            <li><a href="ram.html">RAM</a></li>
-            <li><a href="ssd.html">SSD</a></li>                
-            <li><a href="psu.html">PSU</a></li>
-        </ul>
-  </nav>
-
-</header>
-
-<main>
-    <h1>La carte Graphique (GPU)</h1>
-
-
-    <section id="definition">
-   
-        <h2>Introduction au GPU</h2>
-        	<figure>
-        		<img src="./images/gpu.png" width="500" alt="image d'un GPU">
-        		<figcaption>Carte graphique <em>NVIDIA Geoforce RTX 2080ti</em></figcaption>
-   	 </figure>
-        <p>La carte graphique, aussi appelée GPU (Graphics Processing Unit), est le composant chargé de produire et d’afficher les images sur l’écran.</p>
-        <p>Elle est indispensable pour tout ce qui concerne l’affichage visuel : interface du système, vidéos, jeux, modélisation 3D ou calculs graphiques.</p>
-        <p>Comme le CPU, le GPU est un processeur, mais il est spécialisé dans le traitement graphique et le calcul parallèle.</p>
-    </section>
-
-    <section id="fonctionnement">
-    
-        <h2>Fonctionnement du GPU</h2>
-        <p>Le GPU fonctionne en traitant un très grand nombre de calculs simples en parallèle.</p>
-        <p>Il est conçu pour gérer des opérations répétitives sur des milliers de données en même temps, comme le calcul des couleurs de chaque pixel d’une image.</p>
-        <p>Les principaux éléments internes d’une carte graphique sont :</p>
-        <ul>
-            <li><p><strong>Processeurs de flux</strong> : unités de calcul spécialisées dans le traitement graphique.</p></li>
-            <li><p><strong>Mémoire vidéo (VRAM)</strong> : mémoire dédiée pour stocker les textures, images et données graphiques.</p></li>
-            <li><p><strong>Contrôleur d’affichage</strong> : gère la communication entre le GPU et l’écran.</p></li>
-            <li><p><strong>Bus PCIe</strong> : connecte la carte graphique à la carte mère pour l’échange de données avec le CPU et la RAM.</p></li>
-        </ul>
-        <p>Le GPU reçoit les instructions du CPU, effectue les calculs graphiques, puis envoie l’image finale vers l’écran.</p>
-    </section>
-
-    <section class="lien">
-    
-        <h2>Liens entre la carte graphique et les autres composants du PC</h2>
-        <p>La carte graphique interagit constamment avec les autres éléments de l’ordinateur :</p>
-        <ul>
-            <li><p>CPU : il envoie les instructions générales et les données à traiter par le GPU.</p></li>
-            <li><p>Carte mère : elle relie la carte graphique au reste du système via le port PCI Express.</p></li>
-            <li><p>Mémoire vive (RAM) : certaines données transitent entre la RAM et la VRAM.</p></li>
-            <li><p>Stockage (SSD/HDD) : les textures et fichiers graphiques sont chargés depuis le stockage vers la RAM puis vers la VRAM.</p></li>
-            <li><p>Écran : la carte graphique envoie le signal vidéo final (HDMI, DisplayPort, etc.).</p></li>
-        </ul>
-    </section>
-
-    <section id="evo-limiteGPU">
-        <h2>Limites du GPU et évolution technologique</h2>
-        
-        <section id="limtes">
-        <h3 class="bleu">Limites de la carte graphique</h3>
-        <ul>
-            <li><p><strong>Calculs généraux complexes :</strong></p></li>
-            <li><p>Le GPU est très performant pour le calcul parallèle<a href="#note1"><sup>1</sup></a>, mais moins efficace pour les tâches logiques complexes et séquentielles, mieux adaptées au CPU.</p>
-        </ul>
-        <ul>
-            <li><p><strong>Consommation énergétique :</strong></p></li>
-            <li><p>Les cartes graphiques haut de gamme peuvent consommer beaucoup d’énergie et générer de la chaleur, nécessitant des systèmes de refroidissement et alimentation avancés.</p>
-        </ul>
-        </section>
-        
-        <section id="evo">
-        <h3 class="bleu">Évolution technologique</h3>
-        <ul>
-            <li><p><strong>Puissance de calcul :</strong></p></li>
-            <li><p>Les GPU modernes disposent de milliers d’unités de calcul, bien plus que les anciens modèles.</p></li>
-        </ul>
-        <ul>
-            <li><p><strong>Mémoire vidéo :</strong></p></li>
-            <li><p>Les cartes graphiques modernes disposent de plus de mémoire vidéo (VRAM) que les anciennes cartes, permettant de stocker davantage de textures et d’images.</p></li>
-        </ul>
-        <ul>
-            <li><p><strong>Technologies avancées :</strong></p></li>
-            <li><p>Les GPU intègrent désormais des technologies comme le ray tracing<a href="#note2"><sup>2</sup></a> en temps réel, l’intelligence artificielle pour l’amélioration d’image, et le support de la réalité virtuelle.</p></li>
-        </ul>
-        </section>
-    </section>
-
-
-
-
-    <section id="notes">
-        <h2>Notes</h2>
-        <ol>
-            <li id="note1"><p>Méthode de calcul où de nombreuses opérations sont exécutées en même temps, idéale pour le rendu graphique et l’IA</p></li>
-            <li id="note2"><p>Technique graphique qui simule le comportement réel de la lumière pour produire des images plus réalistes.</p></li>
-        </ol>
-    </section>
-
-</main>
-
-
-
-<footer>
-	
-    <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
-    
-    <span>UE : Développement web – <strong>L2 Informatique</strong></span><br>
-    <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, groupe <strong>C</strong></span><br>
-    <span>Année universitaire : <strong>2025–2026</strong></span>
-</footer>
-
-
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="définition d'un GPU,fonctionnement, Limites,">
+        <meta name="auteurs" content="Lydia LACHEMOT,Thomas LENGLIN">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/icone.png">
+        <title>GPU</title>
+    </head>
+    <body>
+        <header id="haut">
+            <a href = "https://mycy.cyu.fr/"><img src="./images/logoCergy.png" width="150" alt="logo université"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gpu.html">GPU</a></li>
+                    <li><a href="carte-mere.html">Carte-mère</a></li>
+                    <li><a href="ram.html">RAM</a></li>
+                    <li><a href="ssd.html">SSD</a></li>
+                    <li><a href="psu.html">PSU</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>La carte Graphique (GPU)</h1>
+            <section id="definition">
+                <h2>Introduction au GPU</h2>
+                <figure>
+                    <img src="./images/gpu.png" width="500" alt="image d'un GPU">
+                    <figcaption>Carte graphique <em>NVIDIA Geoforce RTX 2080ti</em></figcaption>
+                </figure>
+                <p>La carte graphique, aussi appelée GPU (Graphics Processing Unit), est le composant chargé de produire et d’afficher les images sur l’écran.</p>
+                <p>Elle est indispensable pour tout ce qui concerne l’affichage visuel : interface du système, vidéos, jeux, modélisation 3D ou calculs graphiques.</p>
+                <p>Comme le CPU, le GPU est un processeur, mais il est spécialisé dans le traitement graphique et le calcul parallèle.</p>
+            </section>
+            <section id="fonctionnement">
+                <h2>Fonctionnement du GPU</h2>
+                <p>Le GPU fonctionne en traitant un très grand nombre de calculs simples en parallèle.</p>
+                <p>Il est conçu pour gérer des opérations répétitives sur des milliers de données en même temps, comme le calcul des couleurs de chaque pixel d’une image.</p>
+                <p>Les principaux éléments internes d’une carte graphique sont :</p>
+                <ul>
+                    <li>
+                        <p><strong>Processeurs de flux</strong> : unités de calcul spécialisées dans le traitement graphique.</p>
+                    </li>
+                    <li>
+                        <p><strong>Mémoire vidéo (VRAM)</strong> : mémoire dédiée pour stocker les textures, images et données graphiques.</p>
+                    </li>
+                    <li>
+                        <p><strong>Contrôleur d’affichage</strong> : gère la communication entre le GPU et l’écran.</p>
+                    </li>
+                    <li>
+                        <p><strong>Bus PCIe</strong> : connecte la carte graphique à la carte mère pour l’échange de données avec le CPU et la RAM.</p>
+                    </li>
+                </ul>
+                <p>Le GPU reçoit les instructions du CPU, effectue les calculs graphiques, puis envoie l’image finale vers l’écran.</p>
+            </section>
+            <section class="lien">
+                <h2>Liens entre la carte graphique et les autres composants du PC</h2>
+                <p>La carte graphique interagit constamment avec les autres éléments de l’ordinateur :</p>
+                <ul>
+                    <li>
+                        <p>CPU : il envoie les instructions générales et les données à traiter par le GPU.</p>
+                    </li>
+                    <li>
+                        <p>Carte mère : elle relie la carte graphique au reste du système via le port PCI Express.</p>
+                    </li>
+                    <li>
+                        <p>Mémoire vive (RAM) : certaines données transitent entre la RAM et la VRAM.</p>
+                    </li>
+                    <li>
+                        <p>Stockage (SSD/HDD) : les textures et fichiers graphiques sont chargés depuis le stockage vers la RAM puis vers la VRAM.</p>
+                    </li>
+                    <li>
+                        <p>Écran : la carte graphique envoie le signal vidéo final (HDMI, DisplayPort, etc.).</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="evo-limiteGPU">
+                <h2>Limites du GPU et évolution technologique</h2>
+                <section id="limites">
+                    <h3 class="bleu">Limites de la carte graphique</h3>
+                    <ul>
+                        <li>
+                            <p><strong>Calculs généraux complexes :</strong></p>
+                        </li>
+                        <li class="sous_liste">
+                            <p>Le GPU est très performant pour le calcul parallèle<a href="#note1"><sup>1</sup></a>, mais moins efficace pour les tâches logiques complexes et séquentielles, mieux adaptées au CPU.</p>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>Consommation énergétique :</strong></p>
+                        </li>
+                        <li class="sous_liste">
+                            <p>Les cartes graphiques haut de gamme peuvent consommer beaucoup d’énergie et générer de la chaleur, nécessitant des systèmes de refroidissement et alimentation avancés.</p>
+                    </ul>
+                </section>
+                <section id="evo">
+                    <h3 class="bleu">Évolution technologique</h3>
+                    <ul>
+                        <li>
+                            <p><strong>Puissance de calcul :</strong></p>
+                        </li>
+                        <li class="sous_liste">
+                            <p>Les GPU modernes disposent de milliers d’unités de calcul, bien plus que les anciens modèles.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>Mémoire vidéo :</strong></p>
+                        </li>
+                        <li class="sous_liste">
+                            <p>Les cartes graphiques modernes disposent de plus de mémoire vidéo (VRAM) que les anciennes cartes, permettant de stocker davantage de textures et d’images.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>Technologies avancées :</strong></p>
+                        </li>
+                        <li class="sous_liste">
+                            <p>Les GPU intègrent désormais des technologies comme le ray tracing<a href="#note2"><sup>2</sup></a> en temps réel, l’intelligence artificielle pour l’amélioration d’image, et le support de la réalité virtuelle.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <aside id="notes">
+                <h2>Notes</h2>
+                <ol>
+                    <li id="note1">
+                        <p>Méthode de calcul où de nombreuses opérations sont exécutées en même temps, idéale pour le rendu graphique et l’IA</p>
+                    </li>
+                    <li id="note2">
+                        <p>Technique graphique qui simule le comportement réel de la lumière pour produire des images plus réalistes.</p>
+                    </li>
+                </ol>
+            </aside>
+        </main>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span><br>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, groupe <strong>C</strong></span><br>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
 </html>

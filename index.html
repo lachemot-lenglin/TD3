@@ -1,113 +1,118 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<head> 
-    <meta charset="UTF-8">
-
-    <title>CPU</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./images/icone.png">
-
-</head>
-<body>
-
-
-<header id="haut">
- <a href = "https://mycy.cyu.fr/"><img src="./images/logoCergy.png" width="150" alt="logo université"></a>
-
-	<nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="gpu.html">GPU</a></li>
-            <li><a href="carte-mere.html">Carte-mère</a></li>
-            <li><a href="ram.html">RAM</a></li>
-            <li><a href="ssd.html">SSD</a></li>                
-            <li><a href="psu.html">PSU</a></li>
-        </ul>
-  </nav>
-
-</header>
-
-
-<main>
-
-    <h1>Le Processeur Informatique (CPU)</h1>
-
-
-    <section id="definition">
-        <h2>C'est quoi un CPU ?</h2>
-        <figure>
-       		<img src="./images/cpu.jpg" width="500" alt="image d'un CPU">
-       		<figcaption> CPU</figcaption>
-   	    </figure>
-
-        <p>Le <strong>CPU</strong> (<em>Central Processing Unit</em>), ou processeur, est le composant principal d’un ordinateur.</p>
-        <p>Il est souvent considéré comme le <strong>cerveau du PC</strong>, car il exécute les instructions des programmes et coordonne le fonctionnement des autres composants.</p>
-        <p>Le CPU réalise des calculs, prend des décisions logiques et gère l’enchaînement des tâches.</p>
-        <p>Ses performances influencent directement la rapidité et la réactivité de l’ordinateur.</p>
-    </section>
-
-    <section id="fonctionnement">
-        <h2>Fonctionnement du CPU</h2>
-        <figure>
-        	<img src="./images/cpu2.png" width="600" alt="fonctionnement CPU">
-        	<figcaption>Fonctionnement d'un processeur</figcaption>
-        
-        </figure>
-        <p>Le fonctionnement d’un CPU repose sur un cycle fondamental appelé <strong>cycle d’instruction</strong> :</p>
-        <ol>
-            <li><p><strong>Fetch</strong> (chargement) : le CPU récupère une instruction depuis la mémoire vive (RAM).</p></li>
-            <li><p><strong>Decode</strong> (décodage) : l’instruction est analysée pour comprendre l’opération à effectuer.</p></li>
-            <li><p><strong>Execute</strong> (exécution) : le CPU réalise l’opération (calcul, comparaison, déplacement de données).</p></li>
-        </ol>
-        <p>Le processeur est composé de plusieurs éléments internes :</p>
-        <ul>
-            <li><p><strong>L’unité de contrôle</strong> : elle dirige l’exécution des instructions.</p></li>
-            <li><p><strong>L’ALU </strong>(<em>Arithmetic Logic Unit</em>) : elle effectue les calculs arithmétiques et logiques.</p></li>
-            <li><p><strong>Les registres</strong> : petites mémoires très rapides utilisées pour stocker des données temporaires.</p></li>
-            <li><p><strong>La mémoire cache</strong> : elle accélère l’accès aux données fréquemment utilisées.</p></li>
-            <li><p><strong>L'horloge</strong> : permet de synchroniser les opérations du processeur et le flux de données<a href="#note1"><sup>1</sup></a>.</p></li>
-        </ul>
-    </section>
-
-    <section class="lien">
-        <h2>Liens du CPU avec les autres composants du PC</h2>
-        <p>Le CPU communique en permanence avec les autres éléments de l’ordinateur :</p>
-        <ul>
-            <li><p><strong>Mémoire vive (RAM)</strong> : le CPU y lit les données et instructions nécessaires à l’exécution des programmes.</p></li>
-            <li><p><strong>Carte mère</strong> : elle relie physiquement et électroniquement le CPU aux autres composants via des bus.</p></li>
-            <li><p><strong>Carte graphique (GPU)</strong> : le CPU envoie les données à afficher et délègue les calculs graphiques<a href="#note2"><sup>2</sup></a>.</p></li>
-            <li><p><strong>Stockage (SSD/HDD)</strong> : les programmes et données sont chargés depuis le stockage vers la RAM avant d’être traités par le CPU.</p></li>
-            <li><p><strong>Périphériques</strong> (clavier, souris, réseau) : le CPU traite les informations reçues via les contrôleurs d’entrée/sortie<a href="#note3"><sup>3</sup></a>.</p></li>
-        </ul>
-    </section>
-
-
-
-
-
-
-    <section id="notes">
-        <h2>Notes</h2>
-        <ol>
-            <li id="note1"><p>La fréquence du CPU (exprimée en GHz) indique le nombre de cycles qu’il peut effectuer par seconde.</p></li>
-            <li id="note2"><p>Le processeur est beaucoup moin performant pour les calculs graphiques que la GPU, <a href="https://youtu.be/8_ZTvG1WQxM?si=X-6Z2ZCEBRTug9Lt">vidéo</a>.</p></li>
-            <li id="note3"><p>A noter que le CPU ne traite que les données binaire(1 ou 0)</p></li>
-        </ol>
-    </section>
-
-</main>
-
-
-<footer>
-	
-    
-    <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
-    
-    <span>UE : Développement web – <strong>L2 Informatique</strong></span><br>
-    <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, groupe <strong>C</strong></span><br>
-    <span>Année universitaire : <strong>2025–2026</strong></span>
-</footer>
-
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="définition d'un CPU,fonctionnement, Limites">
+        <meta name="auteurs" content="Lydia LACHEMOT,Thomas LENGLIN">
+        <title>CPU</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/icone.png">
+    </head>
+    <body>
+        <header id="haut">
+            <a href = "https://mycy.cyu.fr/"><img src="./images/logoCergy.png" width="150" alt="logo université"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gpu.html">GPU</a></li>
+                    <li><a href="carte-mere.html">Carte-mère</a></li>
+                    <li><a href="ram.html">RAM</a></li>
+                    <li><a href="ssd.html">SSD</a></li>
+                    <li><a href="psu.html">PSU</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Le Processeur Informatique (CPU)</h1>
+            <section id="definition">
+                <h2>C'est quoi un CPU ?</h2>
+                <figure>
+                    <img src="./images/cpu.jpg" width="500" alt="image d'un CPU">
+                    <figcaption> CPU</figcaption>
+                </figure>
+                <p>Le <strong>CPU</strong> (<em>Central Processing Unit</em>), ou processeur, est le composant principal d’un ordinateur.</p>
+                <p>Il est souvent considéré comme le <strong>cerveau du PC</strong>, car il exécute les instructions des programmes et coordonne le fonctionnement des autres composants.</p>
+                <p>Le CPU réalise des calculs, prend des décisions logiques et gère l’enchaînement des tâches.</p>
+                <p>Ses performances influencent directement la rapidité et la réactivité de l’ordinateur.</p>
+            </section>
+            <section id="fonctionnement">
+                <h2>Fonctionnement du CPU</h2>
+                <figure>
+                    <img src="./images/cpu2.png" width="600" alt="fonctionnement CPU">
+                    <figcaption>Fonctionnement d'un processeur</figcaption>
+                </figure>
+                <p>Le fonctionnement d’un CPU repose sur un cycle fondamental appelé <strong>cycle d’instruction</strong> :</p>
+                <ol>
+                    <li>
+                        <p><strong>Fetch</strong> (chargement) : le CPU récupère une instruction depuis la mémoire vive (RAM).</p>
+                    </li>
+                    <li>
+                        <p><strong>Decode</strong> (décodage) : l’instruction est analysée pour comprendre l’opération à effectuer.</p>
+                    </li>
+                    <li>
+                        <p><strong>Execute</strong> (exécution) : le CPU réalise l’opération (calcul, comparaison, déplacement de données).</p>
+                    </li>
+                </ol>
+                <p>Le processeur est composé de plusieurs éléments internes :</p>
+                <ul>
+                    <li>
+                        <p><strong>L’unité de contrôle</strong> : elle dirige l’exécution des instructions.</p>
+                    </li>
+                    <li>
+                        <p><strong>L’ALU </strong>(<em>Arithmetic Logic Unit</em>) : elle effectue les calculs arithmétiques et logiques.</p>
+                    </li>
+                    <li>
+                        <p><strong>Les registres</strong> : petites mémoires très rapides utilisées pour stocker des données temporaires.</p>
+                    </li>
+                    <li>
+                        <p><strong>La mémoire cache</strong> : elle accélère l’accès aux données fréquemment utilisées.</p>
+                    </li>
+                    <li>
+                        <p><strong>L'horloge</strong> : permet de synchroniser les opérations du processeur et le flux de données<a href="#note1"><sup>1</sup></a>.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="lien">
+                <h2>Liens du CPU avec les autres composants du PC</h2>
+                <p>Le CPU communique en permanence avec les autres éléments de l’ordinateur :</p>
+                <ul>
+                    <li>
+                        <p><strong>Mémoire vive (RAM)</strong> : le CPU y lit les données et instructions nécessaires à l’exécution des programmes.</p>
+                    </li>
+                    <li>
+                        <p><strong>Carte mère</strong> : elle relie physiquement et électroniquement le CPU aux autres composants via des bus.</p>
+                    </li>
+                    <li>
+                        <p><strong>Carte graphique (GPU)</strong> : le CPU envoie les données à afficher et délègue les calculs graphiques<a href="#note2"><sup>2</sup></a>.</p>
+                    </li>
+                    <li>
+                        <p><strong>Stockage (SSD/HDD)</strong> : les programmes et données sont chargés depuis le stockage vers la RAM avant d’être traités par le CPU.</p>
+                    </li>
+                    <li>
+                        <p><strong>Périphériques</strong> (clavier, souris, réseau) : le CPU traite les informations reçues via les contrôleurs d’entrée/sortie<a href="#note3"><sup>3</sup></a>.</p>
+                    </li>
+                </ul>
+            </section>
+            <aside id="notes">
+                <h2>Notes</h2>
+                <ol>
+                    <li id="note1">
+                        <p>La fréquence du CPU (exprimée en GHz) indique le nombre de cycles qu’il peut effectuer par seconde.</p>
+                    </li>
+                    <li id="note2">
+                        <p>Le processeur est beaucoup moin performant pour les calculs graphiques que la GPU, <a href="https://youtu.be/8_ZTvG1WQxM?si=X-6Z2ZCEBRTug9Lt">vidéo</a>.</p>
+                    </li>
+                    <li id="note3">
+                        <p>A noter que le CPU ne traite que les données binaire(1 ou 0)</p>
+                    </li>
+                </ol>
+            </aside>
+        </main>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span><br>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, groupe <strong>C</strong></span><br>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
 </html>

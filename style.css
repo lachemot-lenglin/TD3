@@ -95,6 +95,7 @@ section {
 	 margin: 2rem 0;
 	 padding: 1.5rem;
 	 box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+	 border-radius: 6px;
 	   }
 
 section img {
@@ -102,6 +103,28 @@ section img {
     border-radius: 8px;
 }
 
+#evo-limiteGPU{
+	background-color: rgb(183, 213, 255);
+	border: 2px solid blue;
+	border-radius: 6px;
+	padding: 20px;
+}
+
+#limites{
+	background-color: #FFF9CC;
+	border: 2px solid #FFD700;
+	padding: 15px;
+}
+
+#evo{
+	background-color: #F3FFF3;
+	border: 2px solid #3FA34D;
+	padding: 15px;
+}
+
+.sous_liste{
+	list-style: none;
+}
 
 
 #definition{
@@ -140,6 +163,7 @@ section img {
 		
 		background-color: #FDECF7;
 		border: 2px solid #C2185B;
+		border-radius:0px;
 }
 
 .lien{
@@ -148,9 +172,9 @@ section img {
 	 padding: 1rem;
 	  border-radius: 6px; 
 	  color: #1B263B; 
-	  font-weight: 600;
+	  
 	
-}
+	}
 
 #role{
 	background-color: #FFE8A3;
@@ -293,6 +317,38 @@ footer .hautPage {
 footer span { 
 display: block;
  margin: 0.2rem 0; 
- }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
